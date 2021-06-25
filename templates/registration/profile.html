@@ -1,0 +1,121 @@
+{% extends 'banking/base.html' %}
+{% block content %}
+<style>
+    body {
+        text-align: center;
+    }
+
+    caption {
+        color: #0069d9;
+        ;
+    }
+
+    table {
+        border: 2px solid #787878;
+        width: 800px;
+        border-spacing: 0;
+        margin: auto;
+    }
+
+    th {
+        background-color: #0069d9;
+    }
+
+    td,
+    th {
+        padding: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    caption {
+        font-family: Verdana, sans-serif;
+        font-size: 2.0em;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    tr:nth-of-type(even) {
+        background-color: #FFF5CC;
+    }
+
+    tr:first-of-type {
+        background-color: #0069d9;
+        color: #0D0D0D;
+    }
+</style>
+<header>
+    <!--Navbar-->
+    <!-- Full Page Intro -->
+    <div class="view"
+        style="background-image: url(/static/images/bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-gradient align-items-center">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6 text-light text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft"
+                        data-wow-delay="0.3s">
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+</header>
+<main>
+    <!-- Default form login -->
+    <div class="container py-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-4">
+                <h1 class="display-4">
+                    Hello, {{ user.username|capfirst }}
+                </h1>
+                <h3 class="text-success mt-5">Accout Balance: $20,500</h3>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="table-responsive-md"></div>
+                <h3>Transaction History</h3>
+                <table class="table"
+                    summary="A description of the specialty coffee menu items with one item listed in each row. The first column contains the name of the menu item. The second column describes the specialty coffee. The third column contains the price.">
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Debit/Credit</th>
+                    </tr>
+                    <tr>
+                        <td>06/21/2021</td>
+                        <td>ATM Credit 4270 Broadway New York, NY</td>
+                        <td>$1000.20</td>
+                    </tr>
+                    <tr>
+                        <td>06/20/2021</td>
+                        <td>ATM Withdraw 0033478 AT West 4 Street</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>06/21/2021</td>
+                        <td>ATM Purchase at Starbuck E 25 Park Ave</td>
+                        <td>$510.50</td>
+                    </tr>
+                    <tr>
+                        <td>06/18/2021</td>
+                        <td>ATM Purchase at Eat Healthy Cafe 42 street Second Ave</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>06/17/2021</td>
+                        <td>ATM Purchase at Whole Food Union Square 14 street</td>
+                        <td>$2220.50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

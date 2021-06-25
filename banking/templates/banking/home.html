@@ -1,0 +1,318 @@
+{% extends 'banking/base.html' %} {% load static %} {% block title %} Palms Bank
+{% endblock title %} {% block content %}
+<!-- Main navigation -->
+<!--Main Layout-->
+<header>
+  <!--Navbar-->
+  <!-- Full Page Intro -->
+  <div
+    class="view"
+    style="
+      background-image: url(/static/images/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    "
+  >
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div
+            class="
+              col-md-6
+              text-light text-center text-md-left
+              mt-xl-5
+              mb-5
+              wow
+              fadeInLeft
+            "
+            data-wow-delay="0.3s"
+          >
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">
+              Business Loans <br />
+              <span class="text-primary"> Cash management</span>
+            </h1>
+            <hr class="hr-light" />
+            <h6 class="mb-4">
+              Have an idea for your business? Need a loan to make it a reality?
+              We offer loan options for a variety of business purposes. Our
+              knowledgeable loan officers will review choices with you and help
+              you determine the best fit for your business. We want to see your
+              business grow and succeed!
+            </h6>
+            {% if user.is_authenticated %}
+            <a class="btn btn-primary">Read More</a>
+            {% else %}
+            <a class="btn btn-primary">Read More</a>
+            <a class="btn btn-outline-primary text-dark" href="accounts/login"
+              >Get Started</a
+            >
+            {% endif %}
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div
+            class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight"
+            data-wow-delay="5s"
+          >
+            <img
+              src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+</header>
+<main>
+  <div class="container mt-5">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-4 text-center">
+        <img src="/static/images/1.png" alt="" width="80%" height="40%" />
+        <h3>Statitics</h3>
+        <p>
+          Chart Your Own Course, Select Your Own Investments And Analyze Your
+          Own Portfolio—On Your Own, All Online. We're Just Here To Give You
+          Tools To Help You Steer Your Own Financial Ship.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="/static/images/2.png" alt="" width="80%" height="40%" />
+        <h3>Security</h3>
+        <p>
+          Our Financial Advisors Will Work With You To Build A Plan Tailored To
+          Your Goals, And Offer Advice And Investing Products Intended To Help
+          You Make Progress.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="/static/images/3.png" alt="" width="80%" height="40%" />
+        <h3>Presentation</h3>
+        <p>
+          We Want To Make It As Straightforward As Possible For You To Pursue
+          Your Goals. Use Our Intuitive Research And Investing Tools To Discover
+          Investments And Build Your Online Portfolio. PortfolioBuilder.
+        </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+</main>
+<main>
+  <div
+    class="view"
+    style="
+      background-image: url(/static/images/bg2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    "
+  >
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div
+            class="
+              col-md-6
+              text-light text-center text-md-left
+              mt-xl-2
+              mb-5
+              wow
+              fadeInLeft
+            "
+            data-wow-delay="0.3s"
+          >
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">
+              Business Loans <br />
+              <span class="text-primary"> Cash management</span>
+            </h1>
+            <hr class="hr-light" />
+            <h6 class="mb-4">
+              Have an idea for your business? Need a loan to make it a reality?
+              We offer loan options for a variety of business purposes. Our
+              knowledgeable loan officers will review choices with you and help
+              you determine the best fit for your business. We want to see your
+              business grow and succeed!
+            </h6>
+            <!-- <a class="btn btn-dark">Read More</a>
+                        <a class="btn btn-outline-dark text-dark">Get Started</a> -->
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div
+            class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight"
+            data-wow-delay="5s"
+          >
+            <img
+              src="/static/images/5.png"
+              alt=""
+              class="img-fluid"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+</main>
+<main>
+  <div class="container py-5">
+    <div class="row py-2 justify-content-center">
+      <h2 class="text-center">Products to Meet Your Life Goals</h2>
+    </div>
+    <div class="row py-5 text-center">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body zoom">
+            <div
+              style="
+                background: url(/static/images/icon/1.ico) no-repeat center;
+                height: 100px;
+                width: 100%;
+              "
+            ></div>
+            <h6 class="card-title">Personal Loan</h6>
+            <img src="/static/images/icon/arrow.ico" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body zoom">
+            <div
+              style="
+                background: url(/static/images/icon/2.ico) no-repeat center;
+                height: 100px;
+                width: 100%;
+              "
+            ></div>
+            <h6 class="card-title">Fixed Deposit</h6>
+            <img src="/static/images/icon/arrow.ico" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body zoom">
+            <div
+              style="
+                background: url(/static/images/icon/3.ico) no-repeat center;
+                height: 100px;
+                width: 100%;
+              "
+            ></div>
+            <h6 class="card-title text-nowrap">Savings Account</h6>
+            <img src="/static/images/icon/arrow.ico" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body zoom">
+            <div
+              style="
+                background: url(/static/images/icon/4.ico) no-repeat center;
+                height: 100px;
+                width: 100%;
+              "
+            ></div>
+            <h6 class="card-title">Credit Cards</h6>
+            <img src="/static/images/icon/arrow.ico" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Zoom effect-->
+</main>
+<main>
+  <div class="container">
+    <div class="row py-2">
+      <div class="row py-2 text-start">
+        <div class="col-md-3">
+          <p>
+            <img src="/static/images/icon/5.ico" alt="" width="10%" /><span
+              class="font-weight-bolder"
+            >
+              Mobile Apps</span
+            >
+          </p>
+          <p>
+            Make your life experiences simpler and stay in control with Mobile
+            Banking app. manage your finances; make card settlementS & transfer
+            funds
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            <img src="/static/images/icon/6.ico" alt="" width="10%" /><span
+              class="font-weight-bolder"
+            >
+              Security Tips</span
+            >
+          </p>
+          <p>
+            Easy to use and secure. Manage borrowers, loans, repayments, and
+            reports. Software developed for cash lending industry. Manage
+            borrowers, loans, repayments, reports.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            <img src="/static/images/icon/7.ico" alt="" width="10%" /><span
+              class="font-weight-bolder"
+            >
+              Various Branches</span
+            >
+          </p>
+          <p>
+            Credit cards offer exceptional benefits, rewards, services and
+            spending power that can help make your financial and personal dreams
+            come true.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            <img src="/static/images/icon/8.ico" alt="" width="10%" /><span
+              class="font-weight-bolder"
+            >
+              24/7 Support</span
+            >
+          </p>
+          <p>
+            access more. Customer Support. Our multi-lingual Contact Center is a
+            world-class customer interaction center which offers you 24/7, real
+            time information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Zoom effect-->
+</main>
+<!--Main Layout-->
+<!-- Footer -->
+<!-- Footer -->
+{% endblock content %}

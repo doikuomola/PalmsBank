@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s;
+  /* Animation */
+  /* width: 200px; */
+  /* height: 200px; */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.navbar {
+  background-color: #007bff;
+}
+
+div.col-md-6.text-light.text-center.text-md-left.mt-xl-5.mb-5.wow.fadeInLeft {
+  margin-top: 100px;
+}
+
+/* a.nav-link.btn.btn-primary{
+    text-align: left
+} */
+
+button.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+div.col-md-3 p,
+h2,
+a.nav-link {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+div.card {
+  margin-top: 80px;
+}
+
+div.col-12.col-md-8 {
+  overflow-wrap: anywhere;
+}
+
+.asteriskField {
+  display: none;
+}
+
+div.text-center.text-md-left{
+    text-align-last: center;
+}
+
+label{
+    display: block;
+    text-align-last: center;
+}
+
+section.about{
+    /* margin-top: 200px; */
+    margin-bottom: 150px;
+}
+
+.bigger{
+    font-size: 3rem;
+}
+
+.about-bg{
+    background-size: cover;
+    background: url(/static/images/feedback2.jpg);
+    background-repeat: no-repeat;
+    height: 800px auto;
+    margin-bottom: 40px;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+img.card-img-top{
+    width: 100px;
+    border-radius: 100%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+h4.card-title, p.card-text{
+    color: black;
+    text-align: center;
+}
+
+div.card{
+    height:auto
+}
+
+/* div.row.justify-content-center.mt-4{
+    color:red
+} */
